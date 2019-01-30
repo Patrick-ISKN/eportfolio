@@ -1,0 +1,35 @@
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" width="63.61" height="78.49" viewBox="0 0 63.61 78.49">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        font-size: 10.29px;
+        font-family: Myriad Pro;
+      }
+    </style>
+  </defs>
+  <title>startingblock-logo</title>
+  <path class="cls-1" d="M93.15,115H147s10-13,0-13-54.36,1.47-54.36,1.47S84.12,108,93.15,115Z" transform="translate(-87.83 -36.51)"/>
+  <path class="cls-1" d="M111.31,102.41s16.22-9.82,17.23-21.81S150,102.13,150,102.13" transform="translate(-87.83 -36.51)"/>
+  <path class="cls-1" d="M111.31,66.83s6.52-4.5,4.69-12.5,13.83,4.33,13.83,4.33S129,67.5,125.67,69.83,117.17,88,117.17,88a20.88,20.88,0,0,1-9.5,8.83c-6.5,2.83-14,1.33-11.67-2.83s8.17-10,7.83-17.33-4.67-12-.83-12.33S111.31,66.83,111.31,66.83Z" transform="translate(-87.83 -36.51)"/>
+  <path class="cls-1" d="M96.67,38.67L111,54.33s-1.17-3.9.5-4.7-13.33-13-13.33-13S95.67,35.67,96.67,38.67Z" transform="translate(-87.83 -36.51)"/>
+  <path class="cls-1" d="M106,60h-5l-13-15.35s-0.84-5,2.94-1.65S106,60,106,60Z" transform="translate(-87.83 -36.51)"/>
+  <polygon class="cls-2" points="18.58 51.91 23.83 50.78 25.17 47.99 19.66 47.99 18.58 51.91"/>
+  <polygon class="cls-2" points="18.88 56.8 22.7 55.27 23.41 52.86 19.27 53.38 18.88 56.8"/>
+  <polygon class="cls-2" points="20.56 41.35 19.12 45.45 25.74 44.85 28.63 40.45 20.56 41.35"/>
+  <polygon class="cls-2" points="21.62 34.61 19.76 39.87 28.27 39.11 31.99 33.45 21.62 34.61"/>
+  <polygon class="cls-1" points="18.72 61.4 21.17 63.62 21.17 59.49 18.72 61.4"/>
+  <polygon class="cls-1" points="14.43 61.72 15.29 64.31 16.57 61.38 14.43 61.72"/>
+  <polyline class="cls-1" points="23.88 57.9 26.98 59.24 25.88 56.11 24.15 57.67"/>
+  <polygon class="cls-1" points="29.11 51.91 32.6 52.99 30 49.52 29.11 51.91"/>
+  <text class="cls-3" transform="matrix(0.52, -0.85, 0.85, 0.52, 34.77, 30.03)">JS</text>
+</svg>

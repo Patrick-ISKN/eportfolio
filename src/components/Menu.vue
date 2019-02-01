@@ -2,7 +2,7 @@
   <div>
 
     <div class="desktop menu" id="desktopMenu">
-      <router-link class="logo" to="/" tag="li" exact><a><img :src="logo.image" alt="" /></a></router-link>
+      <router-link class="logo" to="/" tag="li" exact><img :src="logo.image" alt="" /></router-link>
       <router-link v-for="link in links" :to="link.routeName" :key="link.id" tag="li" active-class="activestyle">{{link.name}}</router-link>
     </div>
 
@@ -10,7 +10,7 @@
       <ul class="menu overlay" id="myNav">
         <a href="javascript:void(0)" class="closebtn" @click="closeNav">&times;</a>
         <div class="content" @click="closeNav">
-          <router-link class="logo" to="/" tag="li" exact><a><img :src="logo.image" alt="" /></a></router-link>
+          <router-link class="logo" to="/" tag="li" exact><img :src="logo.image" alt="" /></router-link>
           <router-link v-for="link in links" :to="link.routeName" :key="link.id" tag="li">{{link.name}}</router-link>
         </div>
       </ul>

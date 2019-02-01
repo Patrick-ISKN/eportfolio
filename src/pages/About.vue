@@ -4,7 +4,7 @@
       <div class="intro" v-if="!isClicked">
         <div class="warmUp">
           <h1 class="headForm" id="first">En guise d'échauffement, vous pouvez télécharger mon CV</h1>
-          <button class="buttonstyle"><font-awesome-icon icon="coffee" /> Obtenir mon CV</button>
+          <a :href="cvLink" target="_blank" class="buttonstyle"><font-awesome-icon icon="coffee" /> Obtenir mon CV</a>
         </div>
         <div class="startingBlock">
           <h1 class="headForm">Fin prêt ? Cliquez sur le bouton pour lancer la course...</h1>
@@ -21,7 +21,7 @@
       <h1 class="headForm">Scrollez pour connaître mon parcours ! <font-awesome-icon icon="arrow-down" /></h1>
       <svg-mobile class="svgMobile"></svg-mobile>
       <div id="mobileCv">
-        <button class="buttonstyle"><font-awesome-icon icon="coffee" /> Obtenir mon CV</button>
+        <a :href="cvLink" target="_blank" class="buttonstyle"><font-awesome-icon icon="coffee" /> Obtenir mon CV</a>
       </div>
     </div>
   </div>
@@ -37,6 +37,7 @@ export default {
   data() {
     return {
       isClicked: false,
+      cvLink: 'https://firebasestorage.googleapis.com/v0/b/mywebsitedtb.appspot.com/o/cv.pdf?alt=media&token=08854622-41d6-4949-8b40-2bed3c0f4e3f',
     }
   },
   components: {
@@ -77,7 +78,7 @@ export default {
 
 <style scoped>
 #revealed {
-    padding-top:10% !important;
+  padding-top:10% !important;
 }
 
 #first {

@@ -11,10 +11,15 @@
       v-for="project in projects"
       >
     </div>
-    <div class="overlay" id="projectCarac" @click="closeNav">
+    <div class="overlay projectCarac desktop" @click="closeNav">
+      <h2>{{focusedProject.title}}</h2>
+      <div class="projectImg" v-html="focusedProject.fullImage"></div>
+      <h4>{{focusedProject.caption}}</h4>
+    </div>
+    <div class="overlay projectCarac mobile">
       <a href="javascript:void(0)" class="closebtn" @click="closeNav">&times;</a>
       <h2>{{focusedProject.title}}</h2>
-      <p class="projectImg" v-html="focusedProject.fullImage"></p>
+      <div class="projectImg" v-html="focusedProject.fullImage"></div>
       <h4>{{focusedProject.caption}}</h4>
     </div>
   </div>
@@ -32,20 +37,26 @@ import PHONEAFFICHEBIG from '../assets/bigaffiche.jpg';
 export default {
   methods: {
     openNav(e) {
-      document.getElementById("projectCarac").style.width = "100%";
-      let focusedProject = document.getElementsByClassName('thumbProject');
-      for (let i = 0; i < focusedProject.length; i++) {
-        switch(e.currentTarget) {
-          case focusedProject[i]:
-          this.focusedProject.title = this.projects[i].title;
-          this.focusedProject.caption = this.projects[i].caption;
-          this.focusedProject.fullImage = this.projects[i].fullImage;
-          break;
+      let divProj = document.getElementsByClassName("projectCarac");
+      for (let j = 0; j < divProj.length; j++) {
+        divProj[j].style.width = "100%";
+        let focusedProject = document.getElementsByClassName('thumbProject');
+        for (let i = 0; i < focusedProject.length; i++) {
+          switch(e.currentTarget) {
+            case focusedProject[i]:
+            this.focusedProject.title = this.projects[i].title;
+            this.focusedProject.caption = this.projects[i].caption;
+            this.focusedProject.fullImage = this.projects[i].fullImage;
+            break;
+          }
         }
       }
     },
     closeNav() {
-      document.getElementById("projectCarac").style.width = "0%";
+      let divProj = document.getElementsByClassName("projectCarac")
+      for (let i = 0; i < divProj.length; i++) {
+        divProj[i].style.width = "0%";
+      }
     },
   },
   data() {
@@ -77,7 +88,7 @@ export default {
           id: 3,
           title: 'Phonecalls, court-métrage étudiant',
           thumbnail: PHONETHUMB,
-          fullImage: '<iframe width="560" height="315" src="https://www.youtube.com/embed/YlCel6uBrp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+          fullImage: '<div style="width: 70%;margin: 0 auto;height:0px;position:relative;padding-bottom: 35%;"><iframe src="https://streamable.com/s/d69wx/dbqqqy" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>',
           caption: 'Assigné au poste de scénariste, chef plateau, réalisateur et monteur vidéo. Utilisation de matériel audiovisuel, logiciels de montage vidéo et audio',
 
         },
@@ -93,7 +104,7 @@ export default {
           id: 5,
           title: 'Noir Liquide, court-métrage étudiant',
           thumbnail: NOIRTHUMB,
-          fullImage: '<iframe width="560" height="315" src="https://www.youtube.com/embed/lCB45tyQqME" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+          fullImage: '<div style="width: 70%;margin: 0 auto;height:0px;position:relative;padding-bottom: 35%;"><iframe src="https://streamable.com/s/tttq7/doykgi" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>',
           caption: 'Assigné au poste de chef plateau, réalisateur et monteur vidéo. Utilisation de matériel audiovisuel, logiciels de montage vidéo et audio',
           type: 'video',
         },
@@ -101,7 +112,7 @@ export default {
           id: 6,
           title: 'Musée Rodrigue, court-métrage étudiant',
           thumbnail: RODRIGUE,
-          fullImage: '<iframe width="560" height="315" src="https://www.youtube.com/embed/rl-EoDlUCos" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+          fullImage: '<div style="width: 70%;margin: 0 auto;height:0px;position:relative;padding-bottom: 35%;"><iframe src="https://streamable.com/s/kikfj/mopdzb" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>',
           caption: 'Assigné au poste de chef plateau, réalisateur et monteur vidéo. Utilisation de matériel audiovisuel, logiciels de montage vidéo et audio',
           type: 'video',
         },
@@ -126,7 +137,7 @@ export default {
   left: 0;
   background-color: rgb(0,0,0);
   background-color: rgba(0,0,0, 0.9);
-  overflow-x: hidden;
+  overflow: auto;
   transition: 0.5s;
   color:white;
   padding: 5% 0%;
@@ -152,10 +163,22 @@ export default {
   transform: scale(1.15);
 }
 
+.mobile {
+  display: none;
+}
+
 @media screen and (max-width: 480px) {
   .thumbProject {
     display:block;
     width:100%;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
   }
 
   .closebtn {

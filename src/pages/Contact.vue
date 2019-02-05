@@ -83,7 +83,7 @@ export default {
       return re.test(email);
     },
     backtoTop() {
-      window.scrollTo(0, document.getElementById('top').offsetTop);
+      setTimeout(window.scrollTo(0, document.getElementById('top').offsetTop), 100);
     }
   },
 }

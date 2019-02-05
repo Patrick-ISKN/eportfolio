@@ -48,7 +48,7 @@
     <line class="cls-2" x1="264" y1="520.5" x2="249" y2="520.5"/>
     <rect class="cls-2" x="309.5" y="513.5" width="8" height="14"/>
     <line class="cls-2" x1="316" y1="520.5" x2="309" y2="520.5"/>
-    <text class="cls-6" transform="translate(178.5 491.88)">LICENCE P<tspan x="53.74" y="0">R</tspan><tspan x="60.66" y="0">O WEB GRENOBLE</tspan></text>
+    <text class="cls-6" transform="translate(178.5 491.88)">LICENCE PRO WEB GRENOBLE</text>
     <path class="cls-2" d="M277.1,888.17" transform="translate(-50 -32)"/>
     <polyline class="cls-3" points="243 791.5 156.5 791.5 156.5 711.5 341.5 711.5 341.5 791.5 254.5 791.5 254.5 819.5 241.5 819.5 241.5 793"/>
     <rect class="cls-4" x="163.14" y="716.61" width="170.26" height="68.01"/>
@@ -71,12 +71,12 @@
     <line class="cls-2" x1="280.55" y1="759.48" x2="274.48" y2="772.07"/>
     <rect class="cls-2" x="313.5" y="759.5" width="8" height="12"/>
     <line class="cls-2" x1="322" y1="766.5" x2="314" y2="766.5"/>
-    <text class="cls-7" transform="translate(178 738.42)">3W <tspan x="21.72" y="0">A</tspan><tspan x="29.58" y="0">CADEMY GRENOBLE</tspan></text>
+    <text class="cls-7" transform="translate(178 738.42)">3W ACADEMY GRENOBLE</text>
     <polyline class="cls-3" points="244 1023.5 157.5 1023.5 157.5 943.5 342.5 943.5 342.5 1023.5 255.5 1023.5 255.5 1051.5 242.5 1051.5 242.5 1025"/>
     <rect class="cls-4" x="164.14" y="948.61" width="170.26" height="68.01"/>
     <rect x="171.35" y="955.82" width="158.1" height="22.07"/>
     <rect x="171.35" y="986.9" width="158.1" height="22.07"/>
-    <text class="cls-8" transform="translate(182.38 971.73)">N<tspan x="11.34" y="0">E</tspan><tspan x="19.23" y="0">W DE</tspan>V<tspan x="63.58" y="0">. F</tspan><tspan x="78.43" y="0">R</tspan><tspan x="87.35" y="0">ONT JR</tspan></text>
+    <text class="cls-8" transform="translate(182.38 971.73)">NEW DEV. FRONT JR</text>
     <path class="cls-10" d="M363.79,1204.26" transform="translate(-50 -32)"/>
     <g>
       <polyline class="cls-2" points="232 993.5 226.5 993.5 226.5 999.5 232.5 999.5 232.5 1003.5 227 1003.5"/>

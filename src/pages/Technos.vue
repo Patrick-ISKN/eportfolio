@@ -22,7 +22,7 @@
                 <li class="language" @click="onClickChangeContent" v-for="image in images"><img :src="image.source" alt=""/></li>
               </ul>
             </b-col>
-            <b-col md="8" class="topicBox" id="topicBox">
+            <b-col md="8" class="topicBox">
               <h3>{{content}}</h3>
             </b-col>
           </b-row>
@@ -77,7 +77,7 @@ export default {
           this.content = this.content;
         }
       }
-      window.scrollTo(0, document.getElementById('topicTitle').offsetTop);
+      setTimeout(window.scrollTo(0, document.getElementById('topicTitle').offsetTop), 100);
     },
   }
 }

@@ -77,7 +77,7 @@ export default {
           this.content = this.content;
         }
       }
-      setTimeout(window.scrollTo(0, document.getElementById('topicTitle').offsetTop), 100);
+      window.scrollTo(0, document.getElementById('topicTitle').offsetTop);
     },
   }
 }

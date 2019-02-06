@@ -69,8 +69,7 @@ h4 {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-    /* overflow: auto;
-    -webkit-overflow-scrolling: touch; */
+   -webkit-overflow-scrolling: touch;
   }
 }
 

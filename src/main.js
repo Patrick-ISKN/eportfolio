@@ -20,7 +20,7 @@ library.add(faHeart, faCookieBite, faRunning, faMusic, faCoffee, faHandPeace, fa
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
 const router = new VueRouter({
   routes,

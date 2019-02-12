@@ -50,12 +50,15 @@ export default {
       content: 'Cliquez sur un logo de langage pour connaître mes ambitions',
       images : [
         {
+          id: 1,
           source: JS
         },
         {
+          id: 2,
           source: VUEJS
         },
         {
+          id: 3,
           source: REACT
         },
       ],
